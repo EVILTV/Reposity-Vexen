@@ -1,0 +1,16 @@
+<item>
+<title>[B][I][COLOR red]IPTV[/COLOR][/B][/I]</title>
+<link>$doregex[makelist2]</link> 
+<regex>
+<name>makelist2</name>
+<listrepeat><![CDATA[
+<title>[B][COLOR cyan][makelist2.param2][/COLOR][/B]</title>
+<link>plugin://plugin.video.f4mTester/?url=[makelist2.param3]&amp;streamtype=TSDOWNLOADER&amp;name=[makelist2.param2]</link>
+<thumbnail>http://www.clipartbest.com/cliparts/eTM/p5r/eTMp5rjTn.png</thumbnail>
+<fanart>http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/07/Best-Wallpaper-HD-13.jpg</fanart>     
+]]></listrepeat>
+<expres><![CDATA[#EXTINF:(.*),(.*)\s(http.*://(.*)/live.*ts)]]></expres>
+<page><![CDATA[]]></page>
+<cookieJar></cookieJar>
+</regex>
+</item>
